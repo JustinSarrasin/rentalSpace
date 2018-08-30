@@ -100,4 +100,5 @@ gulp.task('default', ['js', 'bs', 'styles'], () => {
   gulp.watch('dev/**/*.js', ['js']);
   gulp.watch('dev/**/*.scss', ['styles']);
   gulp.watch('./public/styles/style.css', reload);
+  gulp.watch('*.html', reload);
 });
