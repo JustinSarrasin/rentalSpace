@@ -217,7 +217,8 @@ p, blockquote {
 .logo-header {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 15px 0; }
 
 h1 {
   font-size: 2.4rem;
@@ -230,7 +231,7 @@ h1 {
   position: relative;
   margin-left: 125px; }
   .search-bar input {
-    width: 200%;
+    width: 250%;
     height: 35px;
     color: #e5e5e5;
     background-color: #e5e5e5; }
@@ -240,7 +241,7 @@ h1 {
   border: 1px solid transparent;
   position: absolute;
   top: 8px;
-  left: 190px; }
+  left: 240px; }
 
 .search-icons ul {
   display: flex; }
@@ -252,7 +253,7 @@ h1 {
     margin-left: 25px; }
     .search-icons ul li a {
       margin: 0 auto;
-      transform: translateY(24%); }
+      transform: translateY(34%); }
       .search-icons ul li a i {
         font-size: 1.2rem;
         color: white;
@@ -280,20 +281,54 @@ h1 {
   background-image: url(../../Assets/interior-hero.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 72vh; }
+  height: 72vh; }
   .hero h2 {
     color: white;
     text-transform: uppercase;
-    padding-top: 200px; }
+    padding-top: 250px;
+    text-shadow: 2px 2px #212121; }
 
 .hero-hot-links {
   display: flex;
   justify-content: space-between; }
 
 .hot-links {
-  background-color: #03a9f4;
+  margin-top: 10px;
+  background-color: rgba(20, 32, 64, 0.9);
+  border-radius: 8px;
   color: white;
-  width: 30%; }
+  width: 32%;
+  padding: 40px 8px;
+  border: 5px solid #03a9f4;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white; }
+
+.hot-links:hover {
+  background-color: #03a9f4;
+  border: 5px solid rgba(20, 32, 64, 0.9); }
+
+section.types {
+  color: white;
+  margin-top: 50px;
+  background-color: #142040;
+  display: flex;
+  text-align: center; }
+
+.types div {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center; }
+  .types div p {
+    font-size: 4.8rem; }
+  .types div h5 {
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 1.7; }
 
 .wrapper {
   max-width: 1080px;

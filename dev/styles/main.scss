@@ -1,6 +1,7 @@
 @import '_setup';
 @import '_typography';
 @import '_header';
+@import '_types';
 
 .wrapper {
 	max-width: 1080px;
@@ -10,7 +11,14 @@
 
 html {
   font-size: 62.5%;
+  // height: 100%;
+  // width: 100%;
 }
+
+// body {
+//   // height: 100%;
+//   // width: 100%;
+// }
 
 ul {
   margin: 0;
