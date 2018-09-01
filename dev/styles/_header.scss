@@ -1,0 +1,186 @@
+.header-top-nav{
+  background-color: #222222;
+}
+
+.top-nav-container {
+  display: flex;
+  justify-content: space-between;
+  a:hover {
+    color: lighten($lightGrey, 30%);
+  }
+}
+
+.top-nav-l, .top-nav-r{
+  display: flex;
+  font-size: 1.1rem;
+  width: 25%;
+  padding: 5px 0px 5px;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    li {
+      a {
+      color: $lightGrey;
+      }
+    }
+  }
+}
+
+.top-nav-l li {
+  padding-right: 15px;
+}
+
+.top-nav-l li::after {
+    content:"";
+    border-right: 1px solid #8c8c8c;
+    padding-right: 15px;
+}
+
+.top-nav-l li:last-child::after  {
+    display: none;
+}
+
+.top-nav-r li::after {
+    content:"";
+    border-right: 1px solid #8c8c8c;
+    padding-right: 15px;
+}
+
+.top-nav-r li:last-child::after  {
+    display: none;
+}
+
+.top-nav-r li {
+  padding-left: 15px;
+}
+
+.top-nav-r {
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+
+
+
+
+.logo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: $logoBlue;
+  span {
+    color: black;
+  }
+}
+
+.search-bar {
+  position: relative;
+  margin-left: 125px;
+    input {
+    width: 200%;
+    height: 35px;
+    color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 8px;
+  left: 190px;
+}
+
+.search-icons ul {
+  display: flex;
+  li {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: $lightGrey;
+    margin-left: 25px;
+    a {
+      margin: 0 auto;
+      transform: translateY(24%);
+      i {
+        font-size: 1.2rem;
+        color: white;
+        background-color: $lightGrey;
+      }
+    }
+  }
+}
+
+.header-bottom-nav {
+  background-color: $logoBlue;
+  position: relative;
+  ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    li {
+      padding: 10px 0;
+      a {
+        font-size: 1.2rem;
+        color: white;
+      }
+    }
+  }
+}
+
+.header-bottom-nav li:hover {
+  color: black;
+  a {
+    color: $black;
+  }
+}
+
+// .header-bottom-nav li::after{
+//     content: "";
+//     // border-right: 10px solid white;
+//     display: inline-block;
+//     // display: flex;
+//     // justify-content: space-between;
+//     height: 40px;
+//     width: 1px;
+//     position: absolute;
+//     top: 5px;
+//     margin-right: 20px;
+//     // right: 0;
+//     // left: 0;
+//     // background: rgba(20, 32, 64, 0.41);
+//     background: white;
+// }
+
+// .header-bottom-nav li:last-child::after  {
+//     display: none;
+// }
+
+.hero {
+  background-image: url(../../Assets/interior-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 72vh;
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 200px;
+  }
+}
+
+.hero-hot-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hot-links{
+  background-color: $logoBlue;
+  color:white;
+  width : 30%;
+}

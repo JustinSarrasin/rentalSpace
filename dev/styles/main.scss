@@ -1,10 +1,26 @@
-@import 'setup';
+@import '_setup';
+@import '_typography';
+@import '_header';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
+.wrapper {
+	max-width: 1080px;
+  margin: 0 auto;
+  // border: 1px solid red;
 }
 
-body {
-  background-color: yellow;
+html {
+  font-size: 62.5%;
 }
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
